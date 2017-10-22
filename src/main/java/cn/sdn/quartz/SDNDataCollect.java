@@ -19,35 +19,35 @@ public class SDNDataCollect {
     private static final Logger LOGGER = LoggerFactory.getLogger(SDNDataCollect.class);
 
     public void uploadSDNData() {
-        LOGGER.debug("开始获取数据！时间：" + new Date().getTime());
-        //生成本地文件
-        //调用接口
-        System.out.println("调用接口！！  拼接数据！！！");
-
-        LOGGER.debug("数据收集完毕！时间：" + new Date().getTime());
-
-        LOGGER.debug("开始上传数据！ 时间：" + new Date().getTime());
-
-        System.out.println("上传FTP服务器");
-
-        LOGGER.debug("数上传完成！ 时间：" + new Date());
-
-
-    }
-
-    public void uploadSDNData2() {
-        LOGGER.debug("开始获取数据！时间：" + new Date().getTime());
-        //生成本地文件
-        //调用接口
-        System.out.println("调用接口！！  拼接数据！！！");
-
-        LOGGER.debug("数据收集完毕！时间：" + new Date().getTime());
-
-        LOGGER.debug("开始上传数据！ 时间：" + new Date().getTime());
-
-        System.out.println("上传FTP服务器");
-
-        LOGGER.debug("数上传完成！ 时间：" + new Date());
+//        LOGGER.debug("开始获取数据！时间：" + new Date().getTime());
+//        //生成本地文件
+//        //调用接口
+//        System.out.println("调用接口！！  拼接数据！！！");
+//
+//        LOGGER.debug("数据收集完毕！时间：" + new Date().getTime());
+//
+//        LOGGER.debug("开始上传数据！ 时间：" + new Date().getTime());
+//
+//        System.out.println("上传FTP服务器");
+//
+//        LOGGER.debug("数上传完成！ 时间：" + new Date());
+//
+//
+//    }
+//
+//    public void uploadSDNData2() {
+//        LOGGER.debug("开始获取数据！时间：" + new Date().getTime());
+//        //生成本地文件
+//        //调用接口
+//        System.out.println("调用接口！！  拼接数据！！！");
+//
+//        LOGGER.debug("数据收集完毕！时间：" + new Date().getTime());
+//
+//        LOGGER.debug("开始上传数据！ 时间：" + new Date().getTime());
+//
+//        System.out.println("上传FTP服务器");
+//
+//        LOGGER.debug("数上传完成！ 时间：" + new Date());
 
 
     }

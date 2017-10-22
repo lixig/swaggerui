@@ -7,14 +7,14 @@
 
     <appenders>
         <Console name="CONSOLE" target="system_out">
-            <PatternLayout pattern="${PATTERN}" />
+            <PatternLayout pattern="${PATTERN}"/>
         </Console>
     </appenders>
 
     <loggers>
-        <logger name="com.roncoo.education" level="debug" />
+        <logger name="com.roncoo.education" level="debug"/>
         <root level="info">
-            <appenderref ref="CONSOLE" />
+            <appenderref ref="CONSOLE"/>
         </root>
     </loggers>
 </configuration>
