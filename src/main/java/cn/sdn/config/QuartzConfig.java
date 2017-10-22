@@ -52,34 +52,34 @@ public class QuartzConfig {
      * attention:
      * Details：配置定时任务的触发器，也就是什么时候触发执行定时任务
      */
-//    @Bean(name = "jobTigger")
-//    public CronTriggerFactoryBean cronJobTrigger(MethodInvokingJobDetailFactoryBean jobDetail) {
-//        CronTriggerFactoryBean tigger = new CronTriggerFactoryBean();
-//        tigger.setJobDetail(jobDetail.getObject());
-//        tigger.setCronExpression("0/5 * * * * ? *");  //cron时间表达式 0秒开始每五秒执行一次
-//        tigger.setName("srd-chhliu");
-//
-//        return tigger;
-//    }
+    @Bean(name = "jobTigger")
+    public CronTriggerFactoryBean cronJobTrigger(MethodInvokingJobDetailFactoryBean jobDetail) {
+        CronTriggerFactoryBean tigger = new CronTriggerFactoryBean();
+        tigger.setJobDetail(jobDetail.getObject());
+        tigger.setCronExpression("0/5 * * * * ? *");  //cron时间表达式 0秒开始每五秒执行一次
+        tigger.setName("srd-chhliu");
+
+        return tigger;
+    }
 
     /**
      * attention:
      * Details：定义quartz调度工厂
      */
-//    @Bean(name = "scheduler")
-//    public SchedulerFactoryBean schedulerFactoryBean(Trigger cronJobTrigger) {
-//        SchedulerFactoryBean schedulerFactoryBean = new SchedulerFactoryBean();
-//        //用于quartz集群quartzScheduler启动时更新已存在的Job
-//        schedulerFactoryBean.setOverwriteExistingJobs(true);
-//        //延时启动，应用启动10秒后
-//        schedulerFactoryBean.setStartupDelay(1);
-//
-//        //注册触发器
-//        schedulerFactoryBean.setTriggers(cronJobTrigger);
-//
-//        return schedulerFactoryBean;
-//
-//
-//    }
+    @Bean(name = "scheduler")
+    public SchedulerFactoryBean schedulerFactoryBean(Trigger cronJobTrigger) {
+        SchedulerFactoryBean schedulerFactoryBean = new SchedulerFactoryBean();
+        //用于quartz集群quartzScheduler启动时更新已存在的Job
+        schedulerFactoryBean.setOverwriteExistingJobs(true);
+        //延时启动，应用启动10秒后
+        schedulerFactoryBean.setStartupDelay(1);
+
+        //注册触发器
+        schedulerFactoryBean.setTriggers(cronJobTrigger);
+
+        return schedulerFactoryBean;
+
+
+    }
 }
 
